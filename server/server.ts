@@ -20,8 +20,9 @@ const wss: WebSocketServer = new WebSocketServer({ server: httpOblivionServer })
 
 // Quando o usuario se conectar ao servidor
 wss.on('connection', (ws: WebSocket) => {
-    console.log('Você está conectado ao servidor OBLIVION by @MailsonSousa88');
-
+    console.log('Novo cliente conectado ao servidor Oblivion by @MailsonSousa88');
+    ws.send('Você está conectado ao servidor Oblivion by @MailsonSousa88')
+    
     ws.on('message', (data) => {
         const msg = data.toString().trim();
         if(msg == "") {
