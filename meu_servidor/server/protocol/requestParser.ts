@@ -8,7 +8,7 @@ export class RequestParser {
         // Primeiro passo: normalizar o texto removendo os espacos desnecessarios vindo da mensagem.
         // Segundo passo: transformar esse texto em um array com quebras de linha para OPEARTION | OPERAND1 | OPERAND2
         const normalizedText = text.trim();
-        const textLines = normalizedText.split('\n'); 
+        const textLines = normalizedText.split(/\r?\n/); 
 
         // Terceiro passo: criar um objeto temporario para facilitar a validacao dos items (Podem nao estar de acordo com o formato 'NUMBER')
         const data: {[format:string]: string} = {}

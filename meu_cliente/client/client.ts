@@ -49,6 +49,13 @@ form.addEventListener('submit', (event: SubmitEvent) => {
   //  return;
   // }
 
+  // Mandar string vazia pra fechar conexao
+  if (op == "" && num1 == "" && num2 == "") {
+    socket.send("");
+    console.log("Cliente encerrou a conexão com o servidor.")
+    return;
+  }
+
   const message = [
     `OPERATION: ${op}`,
     `OPERAND1: ${num1}`,
