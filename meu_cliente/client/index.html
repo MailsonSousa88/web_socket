@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oblivion WebSocket Client</title>
+</head>
+<body>
+    <main class="layout">
+        <section id="menu" class="panel">
+            <form id="calculator-form">
+                <label for="operation">OPERATION:</label>
+                <input
+                    id="operation"
+                    type="text"
+                    name="operation"
+                    placeholder="Digite ADD, SUB, MUL ou DIV"
+                    autocomplete="off"
+                    required
+                >
+
+                <label for="operand1">OPERAND1:</label>
+                <input id="operand1" type="number" name="operand1" placeholder="Digite um numero" required>
+
+                <label for="operand2">OPERAND2:</label>
+                <input id="operand2" type="number" name="operand2" placeholder="Digite um numero" required>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <aside id="logs-menu" class="panel">
+            <h1>LOGS</h1>
+            <div id="log-list"></div>
+        </aside>
+    </main>
+
+    <script type="module" src="./client.ts"></script>
+</body>
+</html>

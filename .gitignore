@@ -1,0 +1,37 @@
+# Dependencias locais de cada projeto
+meu_servidor/node_modules/
+meu_cliente/node_modules/
+
+# Saidas de build
+meu_servidor/dist/
+meu_servidor/build/
+meu_cliente/dist/
+meu_cliente/build/
+
+# Cache de ferramentas
+meu_cliente/.parcel-cache/
+*.tsbuildinfo
+.npm/
+.yarn/
+
+# Variaveis e configuracoes locais
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Cobertura de testes
+coverage/
+
+# Arquivos do sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*~
