@@ -5,6 +5,7 @@ node_modules/
 dist/
 build/
 coverage/
+.parcel-cache/
 
 # Logs
 npm-debug.log*
@@ -35,10 +36,6 @@ Thumbs.db
 
 # Local test output
 *.log
-
-# Ignore JavaScript output if transpiling
-*.js
-*.js.map
 
 # Editor temporary files
 *.swp
