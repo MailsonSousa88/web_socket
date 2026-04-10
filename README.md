@@ -1,4 +1,4 @@
-# Construindo um WebSocket Server e um Client do Zero
+# Construindo um WebSocket Server e um Client
 
 ### Tecnologia em Análise e Desenvolvimento de Sistemas
 ### Aluno: Francisco Mailson da Silva Sousa
